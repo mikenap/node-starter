@@ -6,7 +6,7 @@
   "scripts": {
     "start": "DEBUG=app nodemon ./server.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "debug": "node --inspect-brk ./src/index.js",
+    "debug": "node --inspect-brk ./server",
     "lint": "eslint ./src/**/*.js"
   },
   "author": "mikenap",

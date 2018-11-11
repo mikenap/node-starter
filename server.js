@@ -7,8 +7,7 @@ const config = require('config');
 const cors = require('cors');
 
 const app = express();
-const configPort = config.get('server.port');
-const port = process.env.PORT || configPort;
+const port = process.env.PORT || config.get('server.port');
 
 app.use(cors());
 app.use(morgan('tiny'));
