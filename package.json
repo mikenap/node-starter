@@ -4,9 +4,9 @@
   "description": "Starter project for Node.js",
   "main": "./src/index.js",
   "scripts": {
-    "start": "DEBUG=app nodemon ./server.js",
+    "start": "DEBUG=app nodemon ./app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "debug": "node --inspect-brk ./server",
+    "debug": "node --inspect-brk ./app.js",
     "lint": "eslint ./src/**/*.js"
   },
   "author": "mikenap",
