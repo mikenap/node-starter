@@ -5,11 +5,13 @@ const debug = require('debug')('app');
 const bodyParser = require('body-parser');
 const config = require('config');
 const cors = require('cors');
+const helmet = require('helmet');
 
 const app = express();
 const port = process.env.PORT || config.get('server.port');
 
 app.use(cors());
+app.use(helmet());
 app.use(morgan('tiny'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
